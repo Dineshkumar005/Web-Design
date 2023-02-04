@@ -3,11 +3,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar
+{
+   background-image: url(image/img2.jpg);
+} 
+.collapse
+{
+  margin-left: 65%;
+ 
+}
+.dropdown-menu
+{
+   background-color: red;
 }
 .cards
 {
     display: flex;
-  
 }
 .card0,.card1,.card2
 {
