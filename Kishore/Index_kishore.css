@@ -1,9 +1,10 @@
 .cards
 {
     display: flex;
+   
 }
-card-img-top
+.card0,.card1,.card2
 {
-    width: 10%;
+    
     margin: 40px;
 }
