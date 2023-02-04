@@ -15,9 +15,6 @@ p,input,textarea{
     color: black;
 }
 
-.nav-item{
-    background-color: aqua;
-}
 
 textarea{
     resize: none;
