@@ -7,7 +7,18 @@
   padding: 10px 0;
 }
 
-.footer-content{
-    line-height: 5px;
-    font-size: 14px;
+p,input,textarea{
+    font-size: small;
+}
+
+.fa.fas-1{
+    color: black;
+}
+
+.nav-item{
+    background-color: aqua;
+}
+
+textarea{
+    resize: none;
 }
