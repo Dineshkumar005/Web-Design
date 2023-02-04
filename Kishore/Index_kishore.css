@@ -23,3 +23,10 @@
 {
     max-width: 500px;
 }
+.card0,.card1,.card1{
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+.card0:hover,.card1:hover,.card2:hover{
+    transform: scale(0.9);
+}
