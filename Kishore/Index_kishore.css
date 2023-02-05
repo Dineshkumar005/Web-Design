@@ -1,10 +1,45 @@
+.body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar
+{
+   background-image: url(image/img2.jpg);
+} 
+.collapse
+{
+  margin-left: 65%;
+ 
+}
+.dropdown-menu
+{
+   background-color: red;
+}
 .cards
 {
     display: flex;
-   
 }
 .card0,.card1,.card2
 {
-    
-    margin: 40px;
+   margin: 20px;
+}
+.card-img-top
+{   
+    height: 15vw;
+    width: 5%;
+ object-fit: cover;
+}
+.card-text
+{
+    max-width: 500px;
+}
+.card0,.card1,.card1{
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+.card0:hover,.card1:hover,.card2:hover{
+    transform: scale(0.9);
 }
