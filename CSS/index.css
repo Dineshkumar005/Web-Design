@@ -11,11 +11,12 @@ p,input,textarea{
     font-size: small;
 }
 
-.fa.fas-1{
-    color: black;
-}
-
-
 textarea{
     resize: none;
+}
+
+.navbar button,.navbar button:focus{
+  box-shadow: none;
+  outline: none;
+  border: none;
 }
