@@ -1,45 +1,68 @@
-.body
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-.navbar
-{
-   background-image: url(image/img2.jpg);
-} 
-.collapse
-{
-  margin-left: 65%;
- 
-}
-.dropdown-menu
-{
-   background-color: red;
-}
-.cards
-{
-    display: flex;
-}
-.card0,.card1,.card2
-{
-   margin: 20px;
-}
-.card-img-top
-{   
-    height: 15vw;
-    width: 5%;
- object-fit: cover;
-}
-.card-text
-{
-    max-width: 500px;
-}
-.card0,.card1,.card1{
-    transition: all 0.5s ease;
-    cursor: pointer;
-  }
-.card0:hover,.card1:hover,.card2:hover{
-    transform: scale(0.9);
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <nav>
+      <ul>
+        <h2 style="color: white;">&nbsp;&nbsp;&nbsp;Booking</h2>
+        <li><input type="text" placeholder="Search.. "></li>
+        <li><img src="search.png" alt="" width="20px" title="Search"></li>
+        <li> <a href="#navbar">Home</a></li>
+        <li><a href="'#"><button>Signin</button></a></li>
+        <li><a href="'#"><button>Signup</button></a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+
+
+  <div class="container">
+    <main role="main" class="pb-3">
+      @RenderBody()
+    </main>
+  </div>
+
+  <footer class="border-top footer text-muted py-1 bg-light">
+    <div class="container-fluid row column-gap-2 m-0 text-center">
+
+      <div class="col-md">
+        <h6 class="py-3">About us</h6>
+        <div class="">
+          <p>B.Tech- Information Technology</p>
+          <p>1234567890></p>
+        </div>
+      </div>
+      <div class="col-md">
+        <h6 class="py-3">Contact us</h6>
+        <div class="">
+          <p>K.S.Rangasamy College Of Technology</p>
+          <p>KSR Kalvi Nagar, Tamil Nadu 637215</p>
+        </div>
+      </div>
+      <div class="col-md">
+        <h6 class="py-3">Feedback</h6>
+        <form action="">
+          <div class="small d-block">
+            <label class="p-3" for="email">Email</label><input type="text" id="email">
+            <label class="p-3" for="message">Comment</label><input class="input-group" type="text" id="message">
+          </div>
+          <button class="btn btn-sm" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
