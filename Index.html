@@ -7,30 +7,207 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booking</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="CSS/index.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
+
 <body>
-  <div class="navbar">
-    <nav>
-      <ul>
-        <h2 style="color: white;">&nbsp;&nbsp;&nbsp;Booking</h2>
-        <li><input type="text" placeholder="Search.. "></li>
-        <li><img src="search.png" alt="" width="20px" title="Search"></li>
-        <li> <a href="#navbar">Home</a></li>
-        <li><a href="'#"><button>Signin</button></a></li>
-        <li><a href="'#"><button>Signup</button></a></li>
 
-      </ul>
-    </nav>
-  </div>
+  <nav class="navbar navbar-expand-sm bg-light sticky-top m-0 p-0">
+    <div class="container-fluid m-0 p-1">
+      <a class="navbar-brand mx-2 px-2 rounded" href="">Industrial Visit</a>
+
+      <i class=" fa fa-horizontal-rule fa-flip-horizontal"></i>
+
+      <div class="navbar-toggler float-end">
+        <div class="d-flex text-secondary">
+          <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-user-plus"></i></a>
+          <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-sign-in"></i></a>
+          <button type="button" class="d-block d-sm-none text-secondary py-1 px-2 rounded" data-bs-toggle="collapse"
+            data-bs-target="#nav-view">
+            <span class="fa fa-list-ul"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="nav-view">
+        <ul class="nav navbar-nav p-0 m-0 me-auto">
+          <li class="nav-item">
+            <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-home-alt fa-2x"></i></a>
+          </li>
+          <li class="nav-item"><a class="nav-link py-1 px-2 rounded" href="">Packages</a></li>
+        </ul>
+      </div>
+
+      <div class="float-end d-none d-sm-block">
+        <div class="d-flex text-secondary">
+          <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-user-plus"></i></a>
+          <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-sign-in"></i></a>
+          <button type="button" class="d-block d-sm-none text-secondary py-1 px-2 rounded" data-bs-toggle="collapse"
+            data-bs-target="#nav-view">
+            <span class="fa fa-list-ul"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
 
 
-
+  <!--Cards-->
   <div class="container">
     <main role="main" class="pb-3">
-      @RenderBody()
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.PYipJ_hSncugM2SwnZitvgHaEK?pid=ImgDet&rs=1"
+                alt="">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body This is card-body This is card-body This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.oqmBe8wpnsCUUuxUwyv5TAHaE8?pid=ImgDet&rs=1"
+                alt="">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.TJijIKQ4g50h7fwM4aU8JQHaEo?pid=ImgDet&rs=1">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.PYipJ_hSncugM2SwnZitvgHaEK?pid=ImgDet&rs=1"
+                alt="">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body This is card-body This is card-body This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.oqmBe8wpnsCUUuxUwyv5TAHaE8?pid=ImgDet&rs=1"
+                alt="">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.TJijIKQ4g50h7fwM4aU8JQHaEo?pid=ImgDet&rs=1">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.PYipJ_hSncugM2SwnZitvgHaEK?pid=ImgDet&rs=1"
+                alt="">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body This is card-body This is card-body This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.oqmBe8wpnsCUUuxUwyv5TAHaE8?pid=ImgDet&rs=1"
+                alt="">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.TJijIKQ4g50h7fwM4aU8JQHaEo?pid=ImgDet&rs=1">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.PYipJ_hSncugM2SwnZitvgHaEK?pid=ImgDet&rs=1"
+                alt="">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body This is card-body This is card-body This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.oqmBe8wpnsCUUuxUwyv5TAHaE8?pid=ImgDet&rs=1"
+                alt="">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.TJijIKQ4g50h7fwM4aU8JQHaEo?pid=ImgDet&rs=1">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.PYipJ_hSncugM2SwnZitvgHaEK?pid=ImgDet&rs=1"
+                alt="">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body This is card-body This is card-body This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.oqmBe8wpnsCUUuxUwyv5TAHaE8?pid=ImgDet&rs=1"
+                alt="">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="https://th.bing.com/th/id/OIP.TJijIKQ4g50h7fwM4aU8JQHaEo?pid=ImgDet&rs=1">
+              <div class="card-body">
+                <h5 class="card-title">Heading</h5>
+                <p class="card-text">This is card-body</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </div>
 
@@ -41,7 +218,7 @@
         <h6 class="py-3">About us</h6>
         <div class="">
           <p>B.Tech- Information Technology</p>
-          <p>1234567890></p>
+          <p> <i class="fa fa-phone"></i> 1234567890</p>
         </div>
       </div>
       <div class="col-md">
@@ -49,18 +226,28 @@
         <div class="">
           <p>K.S.Rangasamy College Of Technology</p>
           <p>KSR Kalvi Nagar, Tamil Nadu 637215</p>
+          <p><i class="fa fa-map-location"></i> Location</p>
         </div>
       </div>
       <div class="col-md">
         <h6 class="py-3">Feedback</h6>
-        <form action="">
-          <div class="small d-block">
-            <label class="p-3" for="email">Email</label><input type="text" id="email">
-            <label class="p-3" for="message">Comment</label><input class="input-group" type="text" id="message">
+
+        <form class="lh-lg small text-start text-res" action="">
+          <div class="row column-gap-1 py-2">
+            <label class="col-xl-2" for="email">Email</label>
+            <input class="col-xl-9 input-group-sm" type="email" name="" id="email" placeholder="Enter email">
           </div>
-          <button class="btn btn-sm" type="submit">Submit</button>
+          <div class="row column-gap-1 py-2">
+            <label class="col-xl-2" for="message">Message</label>
+            <textarea class="col-xl-9 input-group-sm" name="" id="message" cols="20" rows="2" re
+              placeholder="Enter comments here"></textarea>
+          </div>
+          <div class="text-center">
+            <button class="btn-primary small" type="submit">Submit</button>
+          </div>
         </form>
       </div>
+    </div>
     </div>
   </footer>
 </body>
