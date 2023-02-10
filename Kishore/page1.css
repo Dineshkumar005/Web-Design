@@ -19,3 +19,9 @@ background-color:white;
 margin-left: 200px;
 width: 70px;
 }
+@media(max-width:970px)
+{
+.one{
+    width: 960px;
+}
+}
