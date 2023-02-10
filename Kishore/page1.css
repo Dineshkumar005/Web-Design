@@ -1,0 +1,27 @@
+#teximg
+{
+    margin: 0px 0px 0px 50px;
+border: 1px solid rgb(194, 188, 188);
+border-radius: 20px;
+padding: 0px 6px 0px 6px;
+background-color:white;
+}
+.texim
+{
+    padding-left: 200px;
+}
+.card
+{
+    margin: 10px 10px 10px 10px;
+}
+.one img,.imgtex p
+{
+margin-left: 200px;
+width: 70px;
+}
+@media screen {
+    {
+        min-width: 970px;
+    }
+    
+}
