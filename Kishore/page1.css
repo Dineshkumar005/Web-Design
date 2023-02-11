@@ -24,7 +24,7 @@ width: 70px;
     width: 20%;
     margin-left: 150px;
 }
-@media(max-width:801px)
+@media(min-width:801px)
 {
 .one{
     width: 1490px;
@@ -32,15 +32,12 @@ width: 70px;
 }
 .pp
 {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 .ind1 img
 {
     width: 300px;
     margin-left: 100px;
 }
-.img1
-{
-    width: 100px;
-}
+
 }
