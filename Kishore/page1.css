@@ -19,9 +19,18 @@ background-color:white;
 margin-left: 200px;
 width: 70px;
 }
-@media(max-width:1030px)
+@media(max-width:1300px)
 {
 .one{
     width: 1020px;
+}
+.pp
+{
+    padding-top: 30px;
+}
+.img1
+{
+    max-width: 60vh;
+    padding-left: 200px;
 }
 }
