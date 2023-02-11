@@ -19,18 +19,28 @@ background-color:white;
 margin-left: 200px;
 width: 70px;
 }
-@media(max-width:1300px)
+.ind1 img
+{
+    width: 20%;
+    margin-left: 150px;
+}
+@media(max-width:801px)
 {
 .one{
-    width: 1020px;
+    width: 1490px;
+    margin: 10px 10px 10px 10px;
 }
 .pp
 {
     padding-top: 30px;
 }
+.ind1 img
+{
+    width: 300px;
+    margin-left: 100px;
+}
 .img1
 {
-    max-width: 60vh;
-    padding-left: 200px;
+    width: 100px;
 }
 }
