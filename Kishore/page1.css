@@ -6,6 +6,10 @@ border-radius: 20px;
 padding: 0px 6px 0px 6px;
 background-color:white;
 }
+.one .card-body
+{
+    border: 0.1px solid rgb(131, 124, 124);
+}
 .texim
 {
     padding-left: 200px;
@@ -14,7 +18,11 @@ background-color:white;
 {
     margin: 10px 10px 10px 10px;
 }
-.one img,.imgtex p
+.imgtex p
+{
+    margin-left: 30%;
+}
+.one img
 {
 margin-left: 200px;
 width: 70px;
@@ -24,20 +32,18 @@ width: 70px;
     width: 20%;
     margin-left: 150px;
 }
-@media(min-width:801px)
+@media all and(min-width:801px)
 {
 .one{
     width: 1490px;
     margin: 10px 10px 10px 10px;
 }
-.pp
-{
-    padding-top: 10px;
-}
-.ind1 img
-{
-    width: 300px;
-    margin-left: 100px;
-}
 
+
+}
+@media(max-width:1023px)
+{
+    .one{
+        width: 1023px;
+    }
 }
