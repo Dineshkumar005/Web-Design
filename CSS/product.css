@@ -1,0 +1,45 @@
+.btn-back{
+    border-radius: 5px;
+    padding: 3px 20px;
+    color: rgb(70, 70, 70);
+    background-color: rgb(13, 110, 253);
+    border: none;
+    transition: opacity .2s;
+    font-weight:600;
+}
+
+.btn-back:hover{
+    opacity: .8;
+}
+
+.f-panel{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(226, 226, 226);
+    font-weight: 600;
+}
+
+.dd-btn label{
+    background-color: rgb(197, 197, 197);
+    font-size: 1rem;
+    padding: 3px 7px;
+    border-radius: 5px;
+    margin: 0;
+    border: none;
+    transition: transform .2s ease;
+    cursor: pointer;
+    user-select:none;
+}
+
+.dd-btn:hover label{
+    background-color: rgb(170, 170, 170);
+}
+
+#f-toggle:checked+label,#p-toggle:checked+label{
+    transform:rotateZ(-90deg);
+}
+
+p{
+    font-family:'Times New Roman', Times, serif;
+}
