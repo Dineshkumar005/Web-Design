@@ -426,18 +426,18 @@
       <div class="col-md">
         <h6 class="py-3">Feedback</h6>
 
-        <form class="lh-lg small text-start" action="">
+        <form class="lh-lg small text-start" action="Feedback_Form.php" method="post">
           <div class="row column-gap-1 py-2">
             <label class="col-xl-2" for="email">Email</label>
-            <input class="bg-opacity-50 col-xl-9 border-0 border-bottom" type="email" name="" id="email" placeholder="Enter email">
+            <input class="bg-opacity-50 col-xl-9 border-0 border-bottom" type="email" name="email" value=""  placeholder="Enter email">
           </div>
           <div class="row column-gap-1 py-2">
             <label class="col-xl-2" for="message">Message</label>
-            <textarea class="bg-opacity-50 col-xl-9 border-0 border-bottom" name="" id="message" 
+            <textarea class="bg-opacity-50 col-xl-9 border-0 border-bottom" name="message" value=""
               placeholder="Enter comments here"></textarea>
           </div>
           <div class="text-center">
-            <button class="btn-primary small " type="submit ">Submit</button>
+            <button class="btn-primary small " type="submit " name="submit">submit</button>
           </div>
         </form>
       </div>
