@@ -10,7 +10,7 @@ if (!$con) {
   {
     $Email_id=$_POST['email'];
     $Feedback=$_POST['message'];
-    $ins="insert into feedback(Email,Feedback)values($Email_id,$Feedback)";
+    $ins="insert into feedback(Email,Feedback)values('$Email_id','$Feedback')";
     $r=mysqli_query($con,$ins);
     if($r)
     {
