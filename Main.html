@@ -9,56 +9,76 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-sm bg-light sticky-top m-0 p-0">
         <div class="container-fluid m-0 p-1">
-          <a class="navbar-brand mx-2 px-2 rounded" href="">Industrial Visit</a>
-    
-    
-          <div class="navbar-toggler float-end">
-            <div class="d-flex text-secondary">
-              <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-user-plus"></i></a>
-              <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-sign-in"></i></a>
-              <button type="button" class="d-block d-sm-none btn-primary-1 py-1 px-2 rounded text-secondary" data-bs-toggle="collapse"
-                data-bs-target="#nav-view">
-                <span class="fa fa-list-ul"></span>
-              </button>
+            <a class="navbar-brand mx-2 px-2 rounded" href="">Industrial Visit</a>
+
+
+            <div class="navbar-toggler float-end">
+                <div class="d-flex text-secondary">
+                    <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-user-plus"></i></a>
+                    <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-sign-in"></i></a>
+                    <button type="button" class="d-block d-sm-none btn-primary-1 py-1 px-2 rounded text-secondary"
+                        data-bs-toggle="collapse" data-bs-target="#nav-view">
+                        <span class="fa fa-list-ul"></span>
+                    </button>
+                </div>
             </div>
-          </div>
-    
-          <div class="collapse navbar-collapse" id="nav-view">
-            <ul class="nav navbar-nav p-0 m-0 me-auto text-secondary">
-              <li class="nav-item">
-                <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-home-alt "></i></a>
-              </li>
-              <li class="nav-item"><a class="nav-link py-1 px-2 rounded" href="">Packages</a></li>
-            </ul>
-          </div>
-    
-          <div class="float-end d-none d-sm-block">
-            <div class="d-flex text-secondary">
-              <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-user-plus"></i></a>
-              <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-sign-in"></i></a>
-              <button type="button" class="d-block d-sm-none btn-primary py-1 px-2 rounded" data-bs-toggle="collapse"
-                data-bs-target="#nav-view">
-                <span class="fa fa-list-ul"></span>
-              </button>
+
+            <div class="collapse navbar-collapse" id="nav-view">
+                <ul class="nav navbar-nav p-0 m-0 me-auto text-secondary">
+                    <li class="nav-item">
+                        <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-home-alt "></i></a>
+                    </li>
+                    <li>
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle btn-primary" href="#" role="button"
+                                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Packages
+                            </a>
+
+                            <div class="dropdown-menu opacity-75" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Electronic</a>
+                                <a class="dropdown-item" href="#">Information Technology</a>
+                                <a class="dropdown-item" href="#">Hardware</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </div>
+
+            <div class="float-end d-none d-sm-block">
+                <div class="d-flex text-secondary">
+                    <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-user-plus"></i></a>
+                    <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-sign-in"></i></a>
+                    <button type="button" class="d-block d-sm-none btn-primary py-1 px-2 rounded"
+                        data-bs-toggle="collapse" data-bs-target="#nav-view">
+                        <span class="fa fa-list-ul"></span>
+                    </button>
+                </div>
+            </div>
         </div>
-      </nav>
+    </nav>
     <!---->
-        <!--Main carousel-->
-        <main role="main" class="bg-transparent">
-            <div class="container-fluid m-0 p-0">
+    <!--Main carousel-->
+    <main role="main" class="bg-transparent">
+        <div class="container-fluid m-0 p-0">
             <div class="main-carousel">
                 <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -152,43 +172,51 @@
                     </button>
                 </div>
             </div>
-        
-        <!--Offers-->
-            <div class="container-fluid bg-light py-4 rounded px-3" id="offers">
-                <h5 class="p-3 pt-0 text-secondary">Offers</h5>
-                <div class="list-group list-group-horizontal position-relative overflow-x-auto scrolls">
-                    <a href="" class="list-group-item card h-100 py-3 px-4 m-2 rounded">
-                        <h5 class="card-title text-center">Above 50 Persons</h5>
-                        <p class="fw-bold mt-3 text-center text-secondary">5% Off</p>
-                    </a>
-                    <a href="" class="list-group-item card h-100 py-3 px-4 m-2 rounded">
-                        <h5 class="card-title text-center">Above 200 Persons</h5>
-                        <p class="fw-bold mt-3 text-center text-secondary">15% Off</p>
-                    </a>
-                    <a href="" class="list-group-item card h-100 py-3 px-4 m-2 rounded">
-                        <h5 class="card-title text-center">Above 500 Persons</h5>
-                        <p class="fw-bold mt-3 text-center text-secondary">25% Off</p>
-                    </a>
-                </div>
 
+            <!--Offers-->
+            <div class="container-fluid bg-light py-4 rounded px-3 " id="offers">
+                <div class="row-md">
+                    <h5 class="p-3 pt-0 text-secondary text-center">Offers</h5>
+                    <div class="col offer">
+                        <div class="list-group list-group-horizontal position-relative overflow-x-auto scrolls">
+                            <a href="" class="list-group-item card h-100 py-3 px-4 m-2 rounded">
+                                <h5 class="card-title text-center">Above 50 Persons</h5>
+                                <p class="fw-bold mt-3 text-center text-secondary">5% Off</p>
+                            </a>
+                            <a href="" class="list-group-item card h-100 py-3 px-4 m-2 rounded">
+                                <h5 class="card-title text-center">Above 200 Persons</h5>
+                                <p class="fw-bold mt-3 text-center text-secondary">15% Off</p>
+                            </a>
+                            <a href="" class="list-group-item card h-100 py-3 px-4 m-2 rounded">
+                                <h5 class="card-title text-center">Above 500 Persons</h5>
+                                <p class="fw-bold mt-3 text-center text-secondary">25% Off</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        <!--Electronics-->
-            <div class="container-fluid bg-light py-4 rounded px-3">
+            <!--Electronics-->
+            <div class="container-fluid bg-light py-4 rounded px-3 gr">
                 <h5 class="p-3 pt-0 text-secondary">Electronics</h5>
                 <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4">
                     <div class="col">
                         <div class="card h-100">
                             <img class="fill-img rounded"
-                                src="https://i0.wp.com/www.enggwave.com/wp-content/uploads/2021/12/Bosch-Office.jpg?fit=840%2C480&ssl=1" alt="">
+                                src="https://i0.wp.com/www.enggwave.com/wp-content/uploads/2021/12/Bosch-Office.jpg?fit=840%2C480&ssl=1"
+                                alt="">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Bosch Limited</h5>
-                                <p class="card-text  flex-fill">Bosch brings together comprehensive expertise in vehicle technology with hardware, software, and services to offer complete mobility solutions.
+                                <p class="card-text  flex-fill">Bosch brings together comprehensive expertise in
+                                    vehicle
+                                    technology with hardware, software, and services to offer complete mobility
+                                    solutions.
                                 </p>
                                 <div class="d-inline">
-                                    <a  data-toggle="collapse" href="#Details" role="button" aria-expanded="false" aria-controls="Details">
+                                    <a data-toggle="collapse" href="#Details" role="button" aria-expanded="false"
+                                        aria-controls="Details">
                                         For details
-                                      </a>
+                                    </a>
                                     <a href="" class="float-end">For Booking</a>
                                 </div>
                             </div>
@@ -197,11 +225,15 @@
                     <div class="col">
                         <div class="card h-100">
                             <img class="fill-img rounded"
-                                src="https://th.bing.com/th/id/R.baf61d1487ed08e348b76269167a6f54?rik=icdLxjrLlivGBQ&riu=http%3a%2f%2f3dprint.com%2fwp-content%2fuploads%2f2014%2f10%2fhp2.jpg&ehk=z1joL7tg6JwaOjkbK2SpGz4aKcIJ%2f8FikQPQbFOU%2fYs%3d&risl=&pid=ImgRaw&r=0" alt="">
+                                src="https://th.bing.com/th/id/R.baf61d1487ed08e348b76269167a6f54?rik=icdLxjrLlivGBQ&riu=http%3a%2f%2f3dprint.com%2fwp-content%2fuploads%2f2014%2f10%2fhp2.jpg&ehk=z1joL7tg6JwaOjkbK2SpGz4aKcIJ%2f8FikQPQbFOU%2fYs%3d&risl=&pid=ImgRaw&r=0"
+                                alt="">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Hewlett-Packard Enterprise</h5>
                                 <p class=" card-text flex-fill">
-                                    The Hewlett-Packard Company, commonly shortened to Hewlett-Packard or HP, was an American multinational information technology company headquartered in Palo Alto, California.
+                                    The Hewlett-Packard Company, commonly shortened to Hewlett-Packard or HP, was an
+                                    American multinational information technology company headquartered in Palo
+                                    Alto,
+                                    California.
                                 </p>
                                 <div class="d-inline">
                                     <a href="">For Details</a>
@@ -216,7 +248,10 @@
                                 src="https://cdn.wccftech.com/wp-content/uploads/2018/04/sony-1920x1269.jpg">
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title">Sony India Pvt. Ltd</h5>
-                                <p class=" card-text flex-fill">Sony Corporation is the electronics business unit of the Sony Group. It primarily conducts research and development (R&D), planning, designing, manufacturing and marketing for electronics products.
+                                <p class=" card-text flex-fill">Sony Corporation is the electronics business unit of
+                                    the
+                                    Sony Group. It primarily conducts research and development (R&D), planning,
+                                    designing, manufacturing and marketing for electronics products.
                                 </p>
                                 <div class="d-inline">
                                     <a href="">For Details</a>
@@ -228,221 +263,306 @@
                 </div>
             </div>
             <!--collapse-->
-            <div class="collapse" id="Details" >
-            <div class="row-md-6 g-0 m-4">
-      <p>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="true" aria-controls="multiCollapseExample1">
-                    Day-1 </button>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="#multiCollapseExample2">
-                      Day-2
-                      </button>
-                      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="#multiCollapseExample3">
-                        Day-3
+            <div class="collapse" id="Details">
+                <div class="row-md-6 g-0 m-4">
+                    <p>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#multiCollapseExample1" aria-expanded="true"
+                            aria-controls="multiCollapseExample1">
+                            Day-1 </button>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#multiCollapseExample2" aria-expanded="false"
+                            aria-controls="#multiCollapseExample2">
+                            Day-2
                         </button>
-                        <button class="btn btn-primary" data-toggle="collapse" href="#Details" role="button" aria-expanded="false" aria-controls="Details">
-                           Close
-                          </button>
-            
-              
-                <div class="col-12 mt-2 collapse show" id="multiCollapseExample1"aria-labelledby="headingOne" data-parent="#Details">
-                    <div class="card card-body">
-                      <div class="row">
-                        <div class="col-md"><img src="https://www.bosch.in/media/our_company/bosch_smart_solutions_dec_2022_res_1280x720.webp" class="img-fluid mt-5" alt=""></div>
-                        <div class="col-md text-center"><p class="font-weight-bold  text-uppercase font-weight">Bosh Limited</p><p>In India, Bosch is a leading supplier of technology and services in the areas of    Mobility Solutions, Industrial Technology, Consumer Goods, and Energy and Building Technology. Additionally, Bosch has in India the largest development center outside Germany, for end-to-end engineering and technology solutions. The Bosch Group operates in India through twelve companies: Bosch Limited – the flagship company of the Bosch Group in India – Bosch Chassis Systems India Private Limited, Bosch Rexroth (India) Private Limited, Bosch Global Software Technologies PVT LTD, Bosch Automotive Electronics India Private Limited, Bosch Electrical Drives India Private Limited, BSH Home Appliances Private Limited, ETAS Automotive India Private Limited, Robert Bosch Automotive Steering Private Limited, Automobility Services and Solutions Private Limited, Newtech Filter India Private Limited and Mivin Engg.Technologies Private Limited. In India, Bosch set-up its manufacturing operation in 1951, which has grown over the years to include 16 manufacturing sites, and seven development and application centers.
+                        <button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#multiCollapseExample3" aria-expanded="false"
+                            aria-controls="#multiCollapseExample3">
+                            Day-3
+                        </button>
+                        <button class="btn btn-primary" data-toggle="collapse" href="#Details" role="button"
+                            aria-expanded="false" aria-controls="Details">
+                            Close
+                        </button>
 
-                        </p> </div>
-                      </div>
-                    </div>
-                  </div>
-                <div class="col-12 mt-2 collapse" id="multiCollapseExample2"aria-labelledby="headingOne" data-parent="#Details">
-                    <div class="card card-body">
-                        <div class="row">
-                            <div class="col-md mt-4"><img class="img-thumbnail" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/VR-Punjab-Mall.jpg" class="img-fluid mt-5" alt=""></div>
-                            <div class="col-md text-center"><p class="font-weight-bold  text-uppercase font-weight">Z Square Mall</p><p>Z Square Mall is one of the largest shopping malls in India and has also been recognised amongst the best upcoming malls in the country, according to a survey. Spread across a sprawling space, this mall features a state-of-the-art infrastructure and more than 150 national and international brands.
-                                The mall has a play area called Children Square with numerous swings, carts and play stations. It also organises a number of activity camps for art and craft, painting, singing, dancing, storytelling, etc. On the top floor of the mall is a multi-cuisine food court for shoppers to curb their hunger pangs.
-                                For the convenience of shoppers, ATM services are available on all three floors of the mall. Other than that, the mall boasts of a 3-level basement parking that can accommodate 2500 vehicles.
-                                <p> Location:ZZZZZZZZZZZZZ </p>
-                                <p>Timings: 11.00 am – 10.00 pm (Mon-Fri);<br> 11.00 am – 10.30 pm (Sat-Sun)</p> 
-    
-                            </p> </div>
-                          </div>
-                     </div>
-                  </div>
-                <div class="col-12 mt-2">
-                    <div class="col-12 mt-2 collapse" id="multiCollapseExample3"aria-labelledby="headingOne" data-parent="#Details">
-                      <div class="card card-body">
-                        <div class="row">
-                            <div class="col-md mt-4"><img class="img-thumbnail" src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_19,w_5000,h_2817,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/wonderla-hyderabad/Sky_Wheel_k9epdj" class="img-fluid mt-5" alt=""></div>
-                            <div class="col-md text-center"><p class="font-weight-bold  text-uppercase font-weight">Wondrella</p><p>Wonderla has now marked its presence in Hyderabad to unfold an all-new chapter of thrill. Brace yourself, Wonderla Amusement Park, Hyderabad will take you on a ride you have never experienced before. Our 43 world-class rides at the park will mesmerize you and will leave you asking for more. Wonderla Hyderabad offers the perfect package for all age groups with its 25 land-based rides and 18 water-based attractions. Soak and splash in exhilarating water rides, feel the rush of adrenaline on high-thrill rides, and get pampered with the finest facilities in leisure for the whole family.
-                                <p> Location:ZZZZZZZZZZZZZ </p>
-                                <p>Timings: 11.00 am – 10.00 pm (Mon-Fri);<br> 11.00 am – 10.30 pm (Sat-Sun)</p> 
-    
-                            </p> </div>
-                          </div>
+
+                    <div class="col-12 mt-2 collapse show" id="multiCollapseExample1" aria-labelledby="headingOne"
+                        data-parent="#Details">
+                        <div class="card card-body">
+                            <div class="row">
+                                <div class="col-md"><img
+                                        src="https://www.bosch.in/media/our_company/bosch_smart_solutions_dec_2022_res_1280x720.webp"
+                                        class="img-fluid mt-5" alt=""></div>
+                                <div class="col-md text-center">
+                                    <p class="font-weight-bold  text-uppercase font-weight">Bosh Limited</p>
+                                    <p>In India, Bosch is a leading supplier of technology and services in the areas
+                                        of
+                                        Mobility Solutions, Industrial Technology, Consumer Goods, and Energy and
+                                        Building Technology. Additionally, Bosch has in India the largest
+                                        development
+                                        center outside Germany, for end-to-end engineering and technology solutions.
+                                        The
+                                        Bosch Group operates in India through twelve companies: Bosch Limited – the
+                                        flagship company of the Bosch Group in India – Bosch Chassis Systems India
+                                        Private Limited, Bosch Rexroth (India) Private Limited, Bosch Global
+                                        Software
+                                        Technologies PVT LTD, Bosch Automotive Electronics India Private Limited,
+                                        Bosch
+                                        Electrical Drives India Private Limited, BSH Home Appliances Private
+                                        Limited,
+                                        ETAS Automotive India Private Limited, Robert Bosch Automotive Steering
+                                        Private
+                                        Limited, Automobility Services and Solutions Private Limited, Newtech Filter
+                                        India Private Limited and Mivin Engg.Technologies Private Limited. In India,
+                                        Bosch set-up its manufacturing operation in 1951, which has grown over the
+                                        years
+                                        to include 16 manufacturing sites, and seven development and application
+                                        centers.
+
+                                    </p>
+                                </div>
                             </div>
+                        </div>
                     </div>
-                  </div>
-              </div>
+                    <div class="col-12 mt-2 collapse" id="multiCollapseExample2" aria-labelledby="headingOne"
+                        data-parent="#Details">
+                        <div class="card card-body">
+                            <div class="row">
+                                <div class="col-md mt-4"><img class="img-thumbnail"
+                                        src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/VR-Punjab-Mall.jpg"
+                                        class="img-fluid mt-5" alt=""></div>
+                                <div class="col-md text-center">
+                                    <p class="font-weight-bold  text-uppercase font-weight">Z Square Mall</p>
+                                    <p>Z Square Mall is one of the largest shopping malls in India and has also been
+                                        recognised amongst the best upcoming malls in the country, according to a
+                                        survey. Spread across a sprawling space, this mall features a
+                                        state-of-the-art
+                                        infrastructure and more than 150 national and international brands.
+                                        The mall has a play area called Children Square with numerous swings, carts
+                                        and
+                                        play stations. It also organises a number of activity camps for art and
+                                        craft,
+                                        painting, singing, dancing, storytelling, etc. On the top floor of the mall
+                                        is a
+                                        multi-cuisine food court for shoppers to curb their hunger pangs.
+                                        For the convenience of shoppers, ATM services are available on all three
+                                        floors
+                                        of the mall. Other than that, the mall boasts of a 3-level basement parking
+                                        that
+                                        can accommodate 2500 vehicles.
+                                    <p> Location:ZZZZZZZZZZZZZ </p>
+                                    <p>Timings: 11.00 am – 10.00 pm (Mon-Fri);<br> 11.00 am – 10.30 pm (Sat-Sun)</p>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <div class="col-12 mt-2 collapse" id="multiCollapseExample3" aria-labelledby="headingOne"
+                            data-parent="#Details">
+                            <div class="card card-body">
+                                <div class="row">
+                                    <div class="col-md mt-4"><img class="img-thumbnail"
+                                            src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_19,w_5000,h_2817,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/wonderla-hyderabad/Sky_Wheel_k9epdj"
+                                            class="img-fluid mt-5" alt=""></div>
+                                    <div class="col-md text-center">
+                                        <p class="font-weight-bold  text-uppercase font-weight">Wondrella</p>
+                                        <p>Wonderla has now marked its presence in Hyderabad to unfold an all-new
+                                            chapter of thrill. Brace yourself, Wonderla Amusement Park, Hyderabad
+                                            will
+                                            take you on a ride you have never experienced before. Our 43 world-class
+                                            rides at the park will mesmerize you and will leave you asking for more.
+                                            Wonderla Hyderabad offers the perfect package for all age groups with
+                                            its 25
+                                            land-based rides and 18 water-based attractions. Soak and splash in
+                                            exhilarating water rides, feel the rush of adrenaline on high-thrill
+                                            rides,
+                                            and get pampered with the finest facilities in leisure for the whole
+                                            family.
+                                        <p> Location:ZZZZZZZZZZZZZ </p>
+                                        <p>Timings: 11.00 am – 10.00 pm (Mon-Fri);<br> 11.00 am – 10.30 pm (Sat-Sun)
+                                        </p>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!---->
-        <!--Information Technology-->
-        <div class="container-fluid bg-light py-4 rounded px-3">
-            <h5 class="p-3 pt-0 text-secondary">Information Technology</h5>
-            <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="fill-img rounded"
-                            src="https://static-ssl.businessinsider.com/image/5e68ff9554f25c3bc1207ce6-2400/google%20london%20office.jpg"
-                            alt="">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Google LLC</h5>
-                            <p class="card-text  flex-fill">Google LLC is an American multinational technology company focusing on online advertising, search engine technology,
-                            cloud computing, computer software, quantum computing, e-commerce, artificial intelligence, and consumer electronics.
-                            </p>
-                            <div class="d-inline">
-                                <a href="">For Details</a>
-                                <a href="" class="float-end">For Booking</a>
+            <!--Information Technology-->
+            <div class="container-fluid bg-light py-4 rounded px-3 gr mt-3">
+                <h5 class="p-3 pt-0 text-secondary">Information Technology</h5>
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img class="fill-img rounded"
+                                src="https://static-ssl.businessinsider.com/image/5e68ff9554f25c3bc1207ce6-2400/google%20london%20office.jpg"
+                                alt="">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Google LLC</h5>
+                                <p class="card-text  flex-fill">Google LLC is an American multinational technology
+                                    company focusing on online advertising, search engine technology,
+                                    cloud computing, computer software, quantum computing, e-commerce, artificial
+                                    intelligence, and consumer electronics.
+                                </p>
+                                <div class="d-inline">
+                                    <a href="">For Details</a>
+                                    <a href="" class="float-end">For Booking</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="fill-img rounded"
-                            src="https://3.bp.blogspot.com/-333wVl1lfYg/WtRrZQxoLzI/AAAAAAAAAgo/2qOUw3Oo_9Es9Cf5Jdeeun5UjHwty-P3wCLcBGAs/s1600/Apple%2BLogo%2Bon%2Ba%2BGlass%2BWall%2BBuilding.jpg"
-                            alt="">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Apple Inc</h5>
-                            <p class=" card-text flex-fill">
-                                Apple Inc., formerly Apple Computer, Inc., American manufacturer of personal computers, smartphones, tablet computers,
-                                computer peripherals, and computer software.It was the first successful personal computer company and the popularizer of
-                                the graphical user interface.
-                            </p>
-                            <div class="d-inline">
-                                <a href="">For Details</a>
-                                <a href="" class="float-end">For Booking</a>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img class="fill-img rounded"
+                                src="https://3.bp.blogspot.com/-333wVl1lfYg/WtRrZQxoLzI/AAAAAAAAAgo/2qOUw3Oo_9Es9Cf5Jdeeun5UjHwty-P3wCLcBGAs/s1600/Apple%2BLogo%2Bon%2Ba%2BGlass%2BWall%2BBuilding.jpg"
+                                alt="">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Apple Inc</h5>
+                                <p class=" card-text flex-fill">
+                                    Apple Inc., formerly Apple Computer, Inc., American manufacturer of personal
+                                    computers, smartphones, tablet computers,
+                                    computer peripherals, and computer software.It was the first successful personal
+                                    computer company and the popularizer of
+                                    the graphical user interface.
+                                </p>
+                                <div class="d-inline">
+                                    <a href="">For Details</a>
+                                    <a href="" class="float-end">For Booking</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="fill-img rounded"
-                            src="https://cdn.mos.cms.futurecdn.net/PPaSNYxhoxUn3EwqUm3HfX.jpg">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">ZOHO</h5>
-                            <p class=" card-text flex-fill">Zoho Corporation is an Indian multinational technology company that makes computer software and web-based business
-                            tools. It is best known for the online office suite offering Zoho Office Suite.
-                            </p>
-                            <div class="d-inline">
-                                <a href="">For Details</a>
-                                <a href="" class="float-end">For Booking</a>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img class="fill-img rounded"
+                                src="https://cdn.mos.cms.futurecdn.net/PPaSNYxhoxUn3EwqUm3HfX.jpg">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">ZOHO</h5>
+                                <p class=" card-text flex-fill">Zoho Corporation is an Indian multinational
+                                    technology
+                                    company that makes computer software and web-based business
+                                    tools. It is best known for the online office suite offering Zoho Office Suite.
+                                </p>
+                                <div class="d-inline">
+                                    <a href="">For Details</a>
+                                    <a href="" class="float-end">For Booking</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!--Hardware-->
-        <div class="container-fluid bg-light py-4 rounded px-3">
-            <h5 class="p-3 pt-0 text-secondary">Hadrware</h5>
-            <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="fill-img rounded"
-                            src="https://cdn.arstechnica.net/wp-content/uploads/2022/04/GettyImages-1236001587.jpg"
-                            alt="">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Intel</h5>
-                            <p class="card-text  flex-fill">Intel Corporation (commonly known as Intel) is an American multinational corporation. It is
-                            one of the developers of the x86 series of instruction sets, the instruction sets found in most personal computers
-                            (PCs).
-                            </p>
-                            <div class="d-inline">
-                                <a href="">For Details</a>
-                                <a href="" class="float-end">For Booking</a>
+            <!--Hardware-->
+            <div class="container-fluid bg-light py-4 rounded px-3 gr mt-3">
+                <h5 class="p-3 pt-0 text-secondary">Hadrware</h5>
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img class="fill-img rounded"
+                                src="https://cdn.arstechnica.net/wp-content/uploads/2022/04/GettyImages-1236001587.jpg"
+                                alt="">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Intel</h5>
+                                <p class="card-text  flex-fill">Intel Corporation (commonly known as Intel) is an
+                                    American multinational corporation. It is
+                                    one of the developers of the x86 series of instruction sets, the instruction
+                                    sets
+                                    found in most personal computers
+                                    (PCs).
+                                </p>
+                                <div class="d-inline">
+                                    <a href="">For Details</a>
+                                    <a href="" class="float-end">For Booking</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="fill-img rounded"
-                            src="https://techmoran.com/wp-content/uploads/2022/09/Samsung_Electronics.jpg"
-                            alt="">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Samsung Electronics</h5>
-                            <p class=" card-text flex-fill">
-                                Samsung Electronics is a multinational electronics and information technology company headquartered in Suwon and the
-                                flagship company of the Samsung Group.
-                            </p>
-                            <div class="d-inline">
-                                <a href="">For Details</a>
-                                <a href="" class="float-end">For Booking</a>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img class="fill-img rounded"
+                                src="https://techmoran.com/wp-content/uploads/2022/09/Samsung_Electronics.jpg" alt="">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Samsung Electronics</h5>
+                                <p class=" card-text flex-fill">
+                                    Samsung Electronics is a multinational electronics and information technology
+                                    company headquartered in Suwon and the
+                                    flagship company of the Samsung Group.
+                                </p>
+                                <div class="d-inline">
+                                    <a href="">For Details</a>
+                                    <a href="" class="float-end">For Booking</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img class="fill-img rounded" src="https://gumlet.assettype.com/swarajya%2F2021-11%2F9f3303dd-1521-4a15-aa16-6a53ac2e1369%2FToshiba_Corporate_Office_Photo.png?format=auto">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Toshiba</h5>
-                            <p class=" card-text flex-fill">Toshiba Corporation , commonly known as Toshiba and stylized as TOSHIBA, is a Japanese multinational conglomerate
-                            corporation.
-                            </p>
-                            <div class="d-inline">
-                                <a href="">For Details</a>
-                                <a href="" class="float-end">For Booking</a>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img class="fill-img rounded"
+                                src="https://gumlet.assettype.com/swarajya%2F2021-11%2F9f3303dd-1521-4a15-aa16-6a53ac2e1369%2FToshiba_Corporate_Office_Photo.png?format=auto">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Toshiba</h5>
+                                <p class=" card-text flex-fill">Toshiba Corporation , commonly known as Toshiba and
+                                    stylized as TOSHIBA, is a Japanese multinational conglomerate
+                                    corporation.
+                                </p>
+                                <div class="d-inline">
+                                    <a href="">For Details</a>
+                                    <a href="" class="float-end">For Booking</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
+
         </div>
     </main>
     <!-- footer-->
-  <footer class="border-top footer text-muted py-1 bg-light mt-2">
-    <div class="container-fluid row column-gap-2 m-0 text-center">
+    <footer class="border-top footer text-muted py-1 bg-light mt-5">
+        <div class="container-fluid row column-gap-2 m-0 text-center">
 
-      <div class="col-md">
-        <h6 class="py-3">About us</h6>
-        <div class="">
-          <p>B.Tech- Information Technology</p>
-          <p> <i class="fa fa-phone"></i> 1234567890</p>
-        </div>
-      </div>
-      <div class="col-md">
-        <h6 class="py-3">Contact us</h6>
-        <div class="">
-          <p>K.S.Rangasamy College Of Technology</p>
-          <p>KSR Kalvi Nagar, Tamil Nadu 637215</p>
-          <p><i class="fa fa-map-location"></i> Location</p>
-        </div>
-      </div>
-      <div class="col-md">
-        <h6 class="py-3">Feedback</h6>
+            <div class="col-md">
+                <h6 class="py-3">About us</h6>
+                <div class="">
+                    <p>B.Tech- Information Technology</p>
+                    <p> <i class="fa fa-phone"></i> 1234567890</p>
+                </div>
+            </div>
+            <div class="col-md">
+                <h6 class="py-3">Contact us</h6>
+                <div class="">
+                    <p>K.S.Rangasamy College Of Technology</p>
+                    <p>KSR Kalvi Nagar, Tamil Nadu 637215</p>
+                    <p><i class="fa fa-map-location"></i> Location</p>
+                </div>
+            </div>
+            <div class="col-md">
+                <h6 class="py-3">Feedback</h6>
 
-        <form class="lh-lg small text-start" action="Feedback_Form.php" method="post">
-          <div class="row column-gap-1 py-2">
-            <label class="col-xl-2" for="email">Email</label>
-            <input class="bg-opacity-50 col-xl-9 border-0 border-bottom" type="email" name="email" value=""  placeholder="Enter email">
-          </div>
-          <div class="row column-gap-1 py-2">
-            <label class="col-xl-2" for="message">Message</label>
-            <textarea class="bg-opacity-50 col-xl-9 border-0 border-bottom" name="message" value=""
-              placeholder="Enter comments here"></textarea>
-          </div>
-          <div class="text-center">
-            <button class="btn-primary small " type="submit " name="submit">submit</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </footer>
+                <form class="lh-lg small text-start" action="Feedback_Form.php" method="post">
+                    <div class="row column-gap-1 py-2">
+                        <label class="col-xl-2" for="email">Email</label>
+                        <input class="bg-opacity-50 col-xl-9 border-0 border-bottom" type="email" name="email" value=""
+                            placeholder="Enter email">
+                    </div>
+                    <div class="row column-gap-1 py-2">
+                        <label class="col-xl-2" for="message">Message</label>
+                        <textarea class="bg-opacity-50 col-xl-9 border-0 border-bottom" name="message" value=""
+                            placeholder="Enter comments here"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn-primary small " type="submit " name="submit">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
