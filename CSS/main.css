@@ -1,11 +1,10 @@
-
-.fill-carousel{
+.fill-carousel {
     width: 100vw;
     object-fit: cover;
     height: calc(100vh - 3rem);
 }
 
-.carousel-caption button[type="button"]{
+.carousel-caption button[type="button"] {
     color: white;
     margin-top: 100px;
     padding: 10px 25px 5px 25px;
@@ -21,10 +20,11 @@
     min-height: 250px;
 }
 
-#offers .card{
+#offers .card {
     min-width: 175px;
     max-width: 16%;
 }
+
 .card {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.75);
     transition: box-shadow 0.2s ease;
@@ -36,11 +36,11 @@
     transform: scale(1.03);
 }
 
-.card-text{
+.card-text {
     font-size: small
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -51,4 +51,12 @@ a{
     backdrop-filter: blur(1.8px);
     -webkit-backdrop-filter: blur(3.8px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.offer {
+    margin-left: 300px;
+}
+
+.gr {
+    background: linear-gradient(to right, rgb(12, 206, 180), rgb(61, 60, 60));
 }
