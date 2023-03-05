@@ -57,8 +57,23 @@ a {
     position: fixed;
     bottom: 25px;
     right: 20px;
-    opacity: 0.50;
     display: none;
     }
+    .to 
+    {
+        border-radius: 50%
+    }
+.Booking input
+{
+border-radius: 200px;
+background-color: rgb(199, 193, 193);
+}
+.bgs
+{
+    background-image: url('https://www.simpleimageresizer.com/_uploads/photos/9f4fb8ea/xxl_153118960_1920x1080.jpg');
+    height: 15vw;
+width: 100%;
+background-repeat: no-repeat;
 
+}
 

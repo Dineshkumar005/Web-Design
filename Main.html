@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="main.css">
+    
 </head>
 
 <body>
@@ -52,6 +53,7 @@
                                 id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Packages
                             </a>
+                            <a href="FQA.html" class="btn btn-secondary">FQA</a>
 
                             <div class="dropdown-menu opacity-75" aria-labelledby="dropdownMenuLink">
                                 <a class="dropdown-item" href="#Electronics">Electronic</a>
@@ -180,7 +182,7 @@
                     <div class="col offer">
                         <div class="list-group list-group-horizontal position-relative overflow-x-auto scrolls">
                             <a href="" class="list-group-item card h-100 py-3 px-4 m-2 rounded">
-                                <h5 class="card-title text-center">Above 50 Persons</h5>
+                                <h5 class="card-title text-center">Above 50 &nbsp; Persons</h5>
                                 <p class="fw-bold mt-3 text-center text-secondary">5% Off</p>
                             </a>
                             <a href="" class="list-group-item card h-100 py-3 px-4 m-2 rounded">
@@ -217,7 +219,9 @@
                                         aria-controls="Details">
                                         For details
                                     </a>
-                                    <a href="" class="float-end">For Booking</a>
+                                    <a href="" class="float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                      For Booking
+                                      </a>
                                 </div>
                             </div>
                         </div>
@@ -262,6 +266,49 @@
                     </div>
                 </div>
             </div>
+           <!-- Modal -->
+<div class="modal fade bgs" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #657493;">
+          <h5 class="modal-title" id="exampleModalLabel">Booking</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body bg">
+          <form action="" class="Booking">
+            <div class="form-group">
+                <label for="Name">College Name</label>
+                <input type="text" class="form-control mt-2" placeholder="Enter College Name">
+            </div>
+            <div class="form-group">
+                <label for="Name">Enter Your Email</label>
+                <input type="Email" class="form-control mt-2" placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <label for="Name">Enter Your Phone</label>
+                <input type="tel" class="form-control mt-2" placeholder="Enter Phone No">
+            </div>
+            <div class="row">
+                <div class="col-md-6"><span class="form-label">No Of Mens</span> <div class="form-group"> <input class="form-control" type="text" required placeholder="01"> </div></div>
+                <div class="col-md-6"><span class="form-label">No Of Womens</span> <div class="form-group"> <input class="form-control" type="text" required placeholder="01"> </div></div>
+                </div>
+            <div class="row">
+                <div class="col-md-6"><span class="form-label">Check In</span> <div class="form-group"> <input class="form-control" type="date" required> </div></div>
+                <div class="col-md-6"><span class="form-label">Check out</span> <div class="form-group"> <input class="form-control" type="date" required> </div></div>
+                </div>
+                    <div class="modal-footer">
+                <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Book</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
             <!--collapse-->
             <div class="collapse" id="Details">
                 <div class="row-md-6 g-0 m-4">
@@ -563,7 +610,7 @@
             </div>
         </div>
     </footer>
-    <a id="back-to-top" href="#" class="btn btn-lg back-to-top" style="background-color: rgb(136, 138, 245);" role="button"><i class="fas fa-chevron-up"></i></a>
+    <a id="back-to-top" href="#" class="btn btn-lg back-to-top" style="background-color: #fecc2f;" role="button"><i class="fas fa-angle-up" style="color: white;"></i></a>
 </body>
 
 </html>
