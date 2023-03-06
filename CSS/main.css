@@ -66,14 +66,18 @@ a {
 .Booking input
 {
 border-radius: 200px;
-background-color: rgb(199, 193, 193);
+background-color: whitesmoke;
 }
 .bgs
 {
-    background-image: url('https://www.simpleimageresizer.com/_uploads/photos/9f4fb8ea/xxl_153118960_1920x1080.jpg');
+    background-image: linear-gradient(to left, #7B1FA2, #5c2222);
+    background-size: cover;
     height: 15vw;
 width: 100%;
 background-repeat: no-repeat;
 
 }
-
+.modal-body label,.form-label
+{
+    font-weight: 600;
+}
