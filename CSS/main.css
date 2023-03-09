@@ -5,9 +5,11 @@
 .bg-img
 {
    background-image: url(https://cdn.pixabay.com/photo/2020/02/04/20/48/church-4819291__340.jpg);
-   min-height: 700px;
+   min-height:100vh;
    background-repeat: no-repeat;
    background-size: cover;
+   background-attachment: fixed;
+   
 }
 .aa
 {
