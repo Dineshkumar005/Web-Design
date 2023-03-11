@@ -12,7 +12,7 @@ if (!$con) {
     $Email_id=$_POST['Signup-Email'];
     $Password=$_POST['Signup-Password'];
     $Confirm_Password=$_POST['Signup-ConfirmPassword'];
-    $duplicate=mysqli_query($con,"select* from signup where Email='$Email_id'");
+    $duplicate=mysqli_query($con,"select * from signup where Email='$Email_id'");
     if(mysqli_num_rows($duplicate)>0)
     {
         echo'<script>alert("User is already exist")</script>';

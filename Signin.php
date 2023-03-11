@@ -10,7 +10,7 @@ if (!$con) {
   {
     $Email_id=$_POST['Signin-Email'];
     $Password=$_POST['Signin-Password'];
-    $duplicate=mysqli_query($con,"select* from signup where Email='$Email_id' or Password='$Password'");
+    $duplicate=mysqli_query($con,"select * from signup where Email='$Email_id' and Password='$Password'");
     if(mysqli_num_rows($duplicate)>0)
     {
        header("location:Main.html");
