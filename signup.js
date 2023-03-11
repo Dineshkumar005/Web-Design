@@ -15,3 +15,12 @@ const loginText = document.querySelector(".title-text .login");
         signupBtn.click();
         return false;
       });
+      function Validate() {
+        var password = document.getElementById("Signup-Password").value;
+        var confirmPassword = document.getElementById("Signup-ConfirmPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }

@@ -18,7 +18,6 @@ if (!$con) {
         echo'<script>alert("User is already exist")</script>';
     }
     else{
-   
     $ins="insert into signup(Name,Email,Password,ConfirmPassword)values('$Name','$Email_id','$Password','$Confirm_Password')";
     $r=mysqli_query($con,$ins);
     if($r)
