@@ -8,15 +8,23 @@ if (!$con) {
   }
   if(isset($_POST['Signin']))
   {
-    $Email_id=$_POST['Signin-Email'];
-    $Password=$_POST['Signin-Password'];
-    $duplicate=mysqli_query($con,"select * from signup where Email='$Email_id' and Password='$Password'");
-    if(mysqli_num_rows($duplicate)>0)
+    $email_id=$_POST['Signin-Email'];
+    $password=$_POST['Signin-Password'];
+    $query="select * from signup where Email='$email_id' and Password='$password'";
+    $result=mysqli_query($con,$query);
+
+    if($result && mysqli_num_rows($result)>0)
     {
-       header("location:Main.html");
+        $user_data=mysqli_fetch_assoc($result);
+        if($user_data['Email'] === $email_id && $user_data['Password']===$password)
+        {
+            header("location:Main1.html");
+            die;
+        }
     }
     else{
-   echo'<script>alert("Invalid User Id or Password")</script>';
-  }
-  }
+        echo'<script>alert("Invalid User Name or Password")</script>';  
+    }
+}
+
 ?>
