@@ -23,3 +23,7 @@ $(document).ready(function(){
         }
     })
   })
+function Booking()
+{
+  alert("Please Sign In to continue Booking")
+}

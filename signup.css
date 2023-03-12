@@ -14,6 +14,10 @@ html,body{
   background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 
 }
+.Home
+{
+  color: #1a75ff;
+}
 ::selection{
   background: #1a75ff;
   color: #fff;
