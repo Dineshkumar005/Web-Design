@@ -2,7 +2,7 @@
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
-	  if (scroll > 650) {
+	  if (scroll >500) {
         $(".navbar").css("background" , "#333"); 
 	  }
 	  else{
@@ -14,8 +14,8 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        if (scroll > 650) {
-          $(".logo").css("color" , "white"); 
+        if (scroll > 500) {
+          $(".logo,.nav-link").css("color" , "white"); 
         }
         else{
              
