@@ -17,6 +17,10 @@ $(document).ready(function(){
         if (scroll > 500) {
           $(".logo,.nav-link").css("color" , "white"); 
         }
+        if(scroll<500)
+        {
+          $(".logo").css("color" , "Black"); 
+        }
         else{
              
             $(".logo").css("background" , "none");	
