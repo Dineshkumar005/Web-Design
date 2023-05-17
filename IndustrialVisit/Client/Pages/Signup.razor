@@ -1,0 +1,72 @@
+@page "/signup"
+
+@layout LoginLayout
+@using IndustrialVisit.Shared
+
+@inject IUserService UserService
+@inject NavigationManager NavigationManager
+@inject ISessionStorageService SessionStorage
+@inject AuthenticationStateProvider AuthStateProvider
+
+<div class="login d-flex">
+    <div class="container">
+        <div class="container-wrapper">
+
+            <h3 class="login-text"><i class="fa fa-user"></i> Signup</h3>
+        
+            <EditForm Model="@ucs" OnValidSubmit="USignup">
+                <div class="item"><input required="true" class="input" @bind-value=ucs.username type="text" placeholder="Username"></div> 
+                <div class="item"><input required="true" class="input" @bind-value=ucs.email type="text" placeholder="email"> </div>
+                <div class="item"><input required="true" class="input" @bind-value=ucs.password type="password" placeholder="Password"> </div>
+                <div class="item"><input required="true" class="input" @bind-value=cpwd type="text" placeholder="confirm password"> </div>
+
+                <div class="item submit"><button type="submit">Sign Up</button></div>
+            </EditForm>
+            <span><p>@info</p></span>
+            <h2><span>OR</span></h2>
+         
+            <div class="social-media">
+
+                <a href=""><div class="icons8-google social-mediaImg"></div></a> 
+                <a href=""><div class="icons8-facebook-circled social-mediaImg"></div></a> 
+                <a href=""><div class="icons8-twitter social-mediaImg"></div></a> 
+  
+            </div>
+            <span class="ac">Do have an Account? <a href="login">Sign in</a></span>
+        </div>
+
+    </div>
+</div>
+
+@code{
+    UserInfo ucs = new UserInfo();
+    string info=String.Empty;
+    string cpwd=String.Empty;
+
+    private async void USignup()
+    {
+        if(cpwd.Equals(ucs.password))
+        {
+            info = await UserService.Signup(ucs);
+            if (info.Equals("user exists"))
+            {
+                
+            }
+            else if(info.Equals("registered successfully"))
+            {
+                NavigationManager.NavigateTo("/login");
+            }
+            else if (info.Equals("failed to register"))
+            {
+
+            }
+            else
+            {
+            //error
+            }
+        }
+        else{
+            info="Passwords doesn't match";
+        }
+    }
+}

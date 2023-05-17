@@ -1,0 +1,80 @@
+﻿@inject ISessionStorageService sessionStorage
+@inject AuthenticationStateProvider AuthStateProvider
+@inject NavigationManager NavigationManager
+
+<nav class="navbar navbar-expand-sm bg-light sticky-top m-0 p-0">
+  <div class="container-fluid m-0 p-1">
+    <a class="navbar-brand mx-2 px-2 rounded" href="">Industrial Visit</a>
+
+
+    <div class="navbar-toggler float-end">
+      <div class="d-flex text-secondary">
+        <AuthorizeView>
+          <NotAuthorized>
+            <a class="nav-link py-1 px-2 rounded" href="signup"><i class="fa fa-user-plus fa-1x"></i></a>
+            <a class="nav-link py-1 px-2 rounded" href="login"><i class="fa fa-sign-in fa-1x"></i></a>
+          </NotAuthorized>
+          <Authorized>
+            <p class=" px-2 fw-bold m-0">@username</p>
+            <a class="nav-link py-1 px-2 rounded" href=""><i class="fa fa-sign-out fa-1x"></i></a>
+          </Authorized>
+        </AuthorizeView>
+        
+        <button type="button" class="d-block d-sm-none btn-primary-1 py-1 px-2 rounded text-secondary" data-bs-toggle="collapse"
+          data-bs-target="#nav-view">
+          <span class="fa fa-list-ul fa-1x"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="nav-view">
+      <ul class="nav navbar-nav p-0 m-0 me-auto text-secondary d-inline-flex">
+        <div class="underline" style="width: 60px;"></div>
+        <div class="underline" style="width: 60px;"></div>
+        <div class="underline" style="width: 60px;"></div>
+        <li class="nav-item"><a class="nav-link py-1 px-2 rounded-1" onclick="ul(0)" href="">Home</a></li>
+        <li class="nav-item"><a class="nav-link py-1 px-2 rounded-1" onclick="ul(1)" href="packages">Packages</a></li>
+      </ul>
+    </div>
+
+    <div class="float-end d-none d-sm-block">
+      <div class="d-flex text-secondary">
+        <AuthorizeView>
+          <NotAuthorized>
+            <a class="nav-link py-1 px-2 rounded" href="signup"><i class="fa fa-user-plus"></i></a>
+            <a class="nav-link py-1 px-2 rounded" href="login"><i class="fa fa-sign-in"></i></a>
+          </NotAuthorized>
+          <Authorized>
+            <p class="py-1 px-2 fw-bold m-0">@username</p>
+            <a class="nav-link py-1 px-2 rounded" @onclick="Logout"><i class="fa fa-sign-out"></i></a>
+          </Authorized>
+        </AuthorizeView>
+        <button type="button" class="d-block d-sm-none btn-primary py-1 px-2 rounded" data-bs-toggle="collapse"
+          data-bs-target="#nav-view">
+          <span class="fa fa-list-ul"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+@code {
+  string username = String.Empty;
+  protected override async Task OnInitializedAsync()
+  {
+    var result = await sessionStorage.GetItemAsStringAsync("username");    
+    if(result!=null){
+      username=result;
+    }
+  }
+
+      
+
+  public async void Logout()
+  {
+    await sessionStorage.RemoveItemAsync("username");
+    await AuthStateProvider.GetAuthenticationStateAsync();
+    NavigationManager.NavigateTo("/login");
+  }
+}
+

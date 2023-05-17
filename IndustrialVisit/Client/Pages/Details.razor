@@ -1,0 +1,103 @@
+@page "/details/{id:int}"
+
+@using IndustrialVisit.Shared
+@using Microsoft.AspNetCore.WebUtilities
+
+@inject IDetailsService DetailsService
+@inject NavigationManager NavigationHelper
+
+<PageTitle>Details</PageTitle>
+
+<div class="row g-0 bg-secondary">
+    <div class="col-md-4 px-2 py-2">
+        <img src=@DetailsService.package.Imgurl class="fill-img rounded" alt="">
+        <p class="text-center pt-3">@DetailsService.package.CompName</p>
+    </div>
+    <div class="col-md-8 p-3 d-flex flex-column">
+        <div class="flex-fill">
+            <h5>@DetailsService.package.CompName</h5>
+            <p>@DetailsService.package.Description</p>
+            <p><i class="fa fa-location-dot"></i><a href=@DetailsService.package.LocationURL>&nbsp;
+                    @DetailsService.package.Location</a></p>
+            <p><i class="fa fa-phone" style="font-weight: bold;"></i>@DetailsService.package.Number</p>
+            <p><i class="fa fa-link"></i><a href=@DetailsService.package.OfficalURL>
+                    @DetailsService.package.OfficalURL</a></p>
+
+            <div class="d-flex">
+                <i title="Food Included" class="fa fa-bowl-food fa-2x p-3 bg-light mx-1 rounded"></i>
+                <i title="Hotel Included" class="fa fa-bed fa-2x p-3 bg-light mx-1 rounded"></i>
+                <i title="Travel Included" class="fa fa-truck-fast fa-2x p-3 bg-light mx-1 rounded"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="load">
+        <i class="line" id="loader">
+        </i>
+        <div class="option">
+
+            @{
+                int i = 0;
+                while (i < DetailsService.package.NoOfDays)
+                {
+                    <div class="d-flex flex-column">
+                        <label for="day @i">Day @(i+1)</label>
+                        <input type="radio" name="day" onclick="fill(this)" id="day @i"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to=@i class="active" aria-current="true"
+                            aria-label="Slide @i+1">
+                    </div>
+                    i++;
+                }
+            }
+        </div>
+    </div>
+
+
+    <div class="carousel-inner">
+        @{
+            string active = "active";
+            i = 0;
+            while (i < DetailsService.package.NoOfDays)
+            {
+                <div class="carousel-item @active h-100">
+                    <div class="slider">
+                        @foreach (var place in DetailsService.package.Places)
+                        {
+                            @if (place.Day == i + 1)
+                            {
+                                <div class="place">
+
+                                    <div class="sl-content">
+                                        <h5 class="shine text-center">@place.PlaceName</h5>
+                                        <div class="details">
+                                            <p>@place.Description</p>
+                                            <p class="timeing">@place.Time</p>
+                                        </div>
+                                    </div>
+                                    <div class="sl-bg-img" style="background-image: url(@place.ImgUrl);">
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+                i++;
+                active = String.Empty;
+            }
+        }
+
+
+    </div>
+</div>
+
+
+@code{
+    [Parameter] public int id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await DetailsService.GetDetailsOfId(id);
+    }
+}

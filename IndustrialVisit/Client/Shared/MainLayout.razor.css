@@ -1,0 +1,30 @@
+main {
+    flex: 1;
+}
+
+p,
+input,
+textarea {
+    font-size: small;
+}
+
+#message {
+    resize: none;
+}
+
+footer button:hover {
+    background-color: darkgrey;
+    color: rgb(48, 48, 48);
+}
+
+button {
+    border: none;
+}
+
+footer button {
+    background-color: lightgrey;
+}
+
+footer {
+    line-height: 0.4em;
+}

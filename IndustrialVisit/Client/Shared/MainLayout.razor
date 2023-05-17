@@ -1,0 +1,46 @@
+﻿@inherits LayoutComponentBase
+
+<NavMenu />
+
+<main>
+    @Body
+</main>
+
+<footer class="border-top footer text-muted py-1 bg-light">
+    <div class="container-fluid row column-gap-2 m-0 text-center">
+
+      <div class="col-md">
+        <h6 class="py-3">About us</h6>
+        <div class="">
+          <p>B.Tech- Information Technology</p>
+          <p> <i class="fa fa-phone"></i> 1234567890</p>
+        </div>
+      </div>
+      <div class="col-md">
+        <h6 class="py-3">Contact us</h6>
+        <div class="">
+          <p>K.S.Rangasamy College Of Technology</p>
+          <p>KSR Kalvi Nagar, Tamil Nadu 637215</p>
+          <p><i class="fa fa-map-location"></i> Location</p>
+        </div>
+      </div>
+      <div class="col-md">
+        <h6 class="py-3">Feedback</h6>
+
+        <form class="lh-lg small text-start text-res" action="">
+          <div class="row column-gap-1 py-2">
+            <label class="col-xl-2" for="email">Email</label>
+            <input class="col-xl-9 input-group-sm" type="email" name="" id="email" placeholder="Enter email">
+          </div>
+          <div class="row column-gap-1 py-2">
+            <label class="col-xl-2" for="message">Message</label>
+            <textarea class="col-xl-9 input-group-sm" name="" id="message" cols="20" rows="2" re
+              placeholder="Enter comments here"></textarea>
+          </div>
+          <div class="text-center">
+            <button class="btn-primary small" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>

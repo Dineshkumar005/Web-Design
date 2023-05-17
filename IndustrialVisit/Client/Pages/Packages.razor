@@ -1,0 +1,37 @@
+@page "/packages"
+@inject IPackageService PackageService
+
+<PageTitle>Packages</PageTitle>
+
+<div class="container-fluid bg-light py-5 px-3">
+    <h5 class="p-3 pt-0 text-secondary">Packages</h5>
+    <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4 px-3">
+
+        @foreach (var item in PackageService.packages)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <img class="fill-img rounded" src=@item.Imgurl alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@item.CompName</h5>
+                        <p class="card-text  flex-fill">@item.Description
+                        </p>
+                        <div class="d-inline">
+                            <a href="details/@item.PackId">For Details</a>
+                            <a href="" class="float-end">For Booking</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+    </div>
+</div>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await PackageService.GetAllPackages();
+    }
+}

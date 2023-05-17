@@ -1,0 +1,68 @@
+@page "/login"
+
+@layout LoginLayout
+@using IndustrialVisit.Shared
+
+@inject IUserService UserService
+@inject NavigationManager NavigationManager
+@inject ISessionStorageService SessionStorage
+@inject AuthenticationStateProvider AuthStateProvider
+
+
+<div class="login d-flex">
+    <div class="container">
+        <div class="container-wrapper">
+
+            <h3 class="login-text"><i class="bi bi-person-circle ac-logo"></i>Login</h3>
+        
+            <EditForm Model="@ucl" OnValidSubmit="ULogin">
+                <div class="item"><input @bind-value=ucl.email class="input" type="text" placeholder="Username"></div> 
+                <div class="item"><input @bind-value=ucl.password class="input" type="password" placeholder="Password"> </div>
+                <span class="remember"> <a href="#">Forgot Password?</a> </span>
+                <span class="remember"><p>@info</p></span>
+
+                <div class="item submit"><button type="submit">Submit</button></div>
+            </EditForm>
+
+            <h2><span>OR</span></h2>
+         
+            <div class="social-media">
+
+                <a href="#"><div class="icons8-google social-mediaImg"></div></a> 
+                <a href="#"><div class="icons8-facebook-circled social-mediaImg"></div></a> 
+                <a href="#"><div class="icons8-twitter social-mediaImg"></div></a> 
+  
+            </div>
+            <span class="ac">Don't have an Account? <a href="signup">Sign Up</a></span>
+        </div>
+
+    </div>
+</div>
+
+@code{
+    UserInfo ucl = new UserInfo();
+    String info=String.Empty;
+
+    private async void ULogin()
+    {
+        info = await UserService.Login(ucl);
+        if (info.Split(" ")[0].Equals("found"))
+        {
+            await SessionStorage.SetItemAsStringAsync("username",info.Replace("found ",""));
+            await AuthStateProvider.GetAuthenticationStateAsync();
+            NavigationManager.NavigateTo("/");
+        }
+        else if(info.Equals("incorrect password")){
+
+        }
+        else if (info.Equals("not found"))
+        {
+
+        }
+        else{
+            //error
+        }
+
+    }
+
+}
